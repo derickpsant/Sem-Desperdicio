@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sem Desperdício Alimentar</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="script.js">
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700&family=Roboto:wght@300;400&display=swap" rel="stylesheet">
+</head>
+<body>
+
+    <header>
+        <nav class="navbar">
+            <div class="logo">Sem Desperdício Alimentar</div>
+            <ul class="nav-links">
+                <li><a href="#">Início</a></li>
+                <li><a href="#">Formulário</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main class="hero">
+        <h1 class="main-title">Sem Desperdício Alimentar</h1>
+        <p class="subtitle">Combatendo o desperdício, alimentando o futuro</p>
+
+        <section class="container">
+            <div class="card card-menu">
+                <h2>Cardápio da Semana</h2>
+                <div class="slider-content">
+                    <h3 id="current-day">Segunda-feira</h3>
+                        <ul id="menu-list">
+                        <li>Arroz</li>
+                        <li>Feijão</li>
+                        <li>Frango Grelhado</li>
+                        <li>Salada Verde</li>
+                        <li>Batata Assada</li>
+                        </ul>
+                </div>
+                
+                <div class="slider-controls">
+                    <button class="arrow-btn" onclick="moveSlide(-1)">&#8249;</button>
+                    <div class="dots">
+                        <span class="dot active"></span>
+                        <span class="dot"></span>
+                        <span class="dot"></span>
+                        <span class="dot"></span>
+                        <span class="dot"></span>
+                    </div>
+                    <button class="arrow-btn" onclick="moveSlide(1)">&#8250;</button>
+                </div>
+            </div>
+
+            <div class="card card-menu">
+                <h2>Cardápio da Semana</h2>
+                <div class="slider-content">
+                    <h3 id="current-day">Terça-feira</h3>
+                        <ul id="menu-list">
+                        <li>Arroz</li>
+                        <li>Feijão</li>
+                        <li>Frango Grelhado</li>
+                        <li>Salada Verde</li>
+                        <li>Batata Assada</li>
+                        </ul>
+                </div>
+                
+                <div class="slider-controls">
+                    <button class="arrow-btn" onclick="moveSlide(-1)">&#8249;</button>
+                    <div class="dots">
+                        <span class="dot"></span>
+                        <span class="dot active"></span>
+                        <span class="dot"></span>
+                        <span class="dot"></span>
+                        <span class="dot"></span>
+                    </div>
+                    <button class="arrow-btn" onclick="moveSlide(1)">&#8250;</button>
+                </div>
+            </div>
+
+            <div class="card card-survey">
+                <h2>Participe da Pesquisa</h2>
+                <div class="qr-container">
+                    <img src="https://api.qrserver.com/v1/create-qr-code/?size=150x150&data=Exemplo" alt="QR Code">
+                </div>
+                <p class="instruction">Escaneie o QR Code ou clique no botão abaixo para acessar o formulário</p>
+                <button class="form-btn">Acessar Formulário</button>
+            </div>
+        </section>
+    </main>
+
+    <script src="script.js"></script>
+</body>
+</html>

@@ -1,0 +1,157 @@
+:root {
+    --bg-color: #f2ede4;
+    --card-bg: #ffffff;
+    --text-color: #6d5b4b;
+    --accent-color: #7a6a53;
+    --dot-color: #d1c7b7;
+}
+
+body {
+    margin: 0;
+    font-family: 'Roboto', sans-serif;
+    background-color: var(--bg-color);
+    color: var(--text-color);
+}
+
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    padding: 20px 50px;
+    align-items: center;
+}
+
+.logo {
+    font-family: 'Playfair Display', serif;
+    font-weight: bold;
+    font-size: 1.2rem;
+}
+
+.nav-links {
+    list-style: none;
+    display: flex;
+    gap: 20px;
+}
+
+.nav-links a {
+    text-decoration: none;
+    color: var(--text-color);
+    font-size: 0.9rem;
+}
+
+.hero {
+    text-align: center;
+    padding: 40px 20px;
+}
+
+.main-title {
+    font-family: 'Playfair Display', serif;
+    font-size: 3.5rem;
+    margin-bottom: 5px;
+}
+
+.subtitle {
+    font-style: italic;
+    font-size: 1.1rem;
+    margin-bottom: 50px;
+}
+
+.container {
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+    flex-wrap: wrap;
+}
+
+.card {
+    background: var(--card-bg);
+    border-radius: 15px;
+    padding: 30px;
+    width: 400px;
+    min-height: 450px;
+    box-shadow: 0 4px 15px rgba(0,0,0,0.05);
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+h2 {
+    font-family: 'Playfair Display', serif;
+    font-size: 1.8rem;
+}
+
+.slider-content h3 {
+    color: #a69076;
+    margin: 20px 0;
+}
+
+.slider-content ul {
+    list-style: none;
+    padding: 0;
+    text-align: left;
+    display: inline-block;
+}
+
+.slider-content li::before {
+    content: "•";
+    color: #d4a373;
+    font-weight: bold;
+    display: inline-block; 
+    width: 1em;
+}
+
+.slider-controls {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-top: 20px;
+}
+
+.arrow-btn {
+    background: var(--accent-color);
+    color: white;
+    border: none;
+    border-radius: 50%;
+    width: 40px;
+    height: 40px;
+    cursor: pointer;
+    font-size: 1.5rem;
+}
+
+.dots {
+    display: flex;
+    gap: 8px;
+}
+
+.dot {
+    width: 8px;
+    height: 8px;
+    background: var(--dot-color);
+    border-radius: 50%;
+}
+
+.dot.active {
+    background: var(--accent-color);
+    width: 20px;
+    border-radius: 4px;
+}
+
+.qr-container {
+    background: #e9e4d9;
+    padding: 20px;
+    border-radius: 10px;
+    display: inline-block;
+    margin: 0 auto;
+}
+
+.instruction {
+    font-size: 0.85rem;
+    padding: 0 20px;
+}
+
+.form-btn {
+    background: none;
+    border: none;
+    color: var(--text-color);
+    text-decoration: underline;
+    cursor: pointer;
+}
